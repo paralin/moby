@@ -29,12 +29,12 @@ func TestSetHostHeader(t *testing.T) {
 	}{
 		{
 			"unix:///var/run/docker.sock",
-			"docker",
+			DummyHost,
 			"/var/run/docker.sock",
 		},
 		{
 			"npipe:////./pipe/docker_engine",
-			"docker",
+			DummyHost,
 			"//./pipe/docker_engine",
 		},
 		{
